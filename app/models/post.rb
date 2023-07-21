@@ -3,8 +3,9 @@ class Post < ApplicationRecord
   has_many :likes
   has_many :comments
 
-  def posts_counter_function
+  def update_posts_counter
     author.increment!(:posts_counter)
+    author.save
   end
 
   def five_recent_comments
