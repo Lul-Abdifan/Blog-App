@@ -1,12 +1,25 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.describe Like, type: :model do
-#   it 'Like counter should be one' do
-#     first_person = User.create(name: 'Tom1', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-#                                bio: 'Teacher from Mexico.')
-#     first_post = Post.create(author: first_person, title: 'Hello', text: 'This is my first post')
-#     Like.create(author: first_person, post: first_post)
+RSpec.describe Like, type: :model do
 
-#     expect(first_post.likes_counter).to eq(1)
-#   end
-# end
+it 'updates likes counter of the post' do
+    user1 = User.create(
+      name: 'Tom',
+      photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+      bio: 'Teacher from Mexico.', posts_counter: 0
+    )
+    post1 = Post.create(author: user1, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                        likes_counter: 0)
+     Like.create(post: post1, author: user1)
+    liked_post = Post.find_by_author_id(post1.author_id)
+    expect(liked_post.likes_counter).to eq 1
+  end
+
+
+
+
+
+
+
+
+end
