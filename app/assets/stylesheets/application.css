@@ -1,49 +1,60 @@
-.each-post,ul ,.each-post-comments{
-    list-style: none;
-    padding: 0;
-    margin:0px 300px;
-  }
-.each-post ,.each-post-comments{
-    margin-top:30px;
-    padding-left: 20px;
-    border: 3px solid #252323;
+.each-post,
+ul,
+.each-post-comments {
+  list-style: none;
+  padding: 0;
+  margin: 0 300px;
 }
-.each-post-comments h6{
-    
-    padding:0px
-}
-.each-post span{
-    margin-top: -30px;
-    font-size: 20px;
-}
-  .bio,h1.user-name,li {
-    display: grid;
-    padding-left: 20px;
-    margin-top:30px;
-    border: 3px solid #252323;
-    font-size: 30px;
-  }
-  .bio,.user-name{
-    margin:30px 300px;
-    font-size: 15px;
-  }
-  span{
-    
-    position:relative;
-    left:60%;
-    margin-left:15px;
-   
-    font-size: 22px;
-  }
-  .comment-likes{
-    display: flex;
-    padding-bottom: 15px;
-  }
 
-  .posts_counter{
-    padding: 10px 0px;
-  }
-  .comment-list{
-    font-size: 15px;
-    margin:5px;
-  }
+.each-post,
+.each-post-comments {
+  margin-top: 30px;
+  padding-left: 20px;
+  border: 3px solid #252323;
+}
+
+.each-post-comments h6 {
+  padding: 0;
+}
+
+span {
+  position: relative;
+  left: 60%;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.each-post span {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.bio,
+h1.user-name,
+li {
+  display: grid;
+  padding-left: 20px;
+  margin-top: 30px;
+  border: 3px solid #252323;
+  font-size: 30px;
+}
+
+.bio,
+.user-name {
+  margin: 30px 300px;
+  font-size: 15px;
+}
+
+.comment-likes {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.posts_counter {
+  padding: 10px 0;
+}
+
+.comment-list {
+  font-size: 15px;
+  margin: 5px;
+}
