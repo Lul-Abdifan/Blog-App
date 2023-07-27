@@ -1,1 +1,7 @@
-<h1>Lists of user </h1>
+<ul>
+<% @users.each do |user| %>
+<li><%=user.name%><span>Number of 
+Posts: <%=user.posts_counter%></span></li>
+
+<%end%>
+</ul>
