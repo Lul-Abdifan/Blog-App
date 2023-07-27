@@ -1,1 +1,27 @@
-<h1>individual post is here </h1>
+<div class="each-post"> 
+<h3>
+Post #1
+<%=@post.author.name%>
+
+</h3>
+<article class="comment-likes">
+<span>Comments: <%=@post.comments_counter%></span>
+<span class="like-span">Likes: <%=@post.likes_counter%></span>
+</article>
+
+<%=@post.text%>
+</div>
+<div class="each-post-comments">
+<%@post.comments.each do |comment|%> 
+<h6><%=comment.author.name%> : <%=comment.text%></h6>
+
+
+<%end%>
+</div>
+
+
+ 
+
+  
+
+
