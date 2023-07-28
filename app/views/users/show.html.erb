@@ -1,3 +1,4 @@
+     <div>
       <h1 class="user-name"><%=@user.name%><span class="posts_counter">Number of Posts: <%=@user.posts_counter%></span></h1>
 <h3 class="bio">Bio: <p ><%=@user.bio%></p></h3>
 <ul>
@@ -14,5 +15,7 @@
 </li>
 
 <%end%>
-</ul>
 
+</ul>
+<a href="/users/<%= @user.id%>/posts" class="all_post_btn">See all Posts</a>
+</div>

@@ -1,7 +1,3 @@
 <ul>
-<% @users.each do |user| %>
-<li><%=user.name%><span>Number of 
-Posts: <%=user.posts_counter%></span></li>
-
-<%end%>
+<%=render @users %>
 </ul>
