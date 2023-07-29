@@ -1,4 +1,10 @@
 <div class="each-post"> 
+<% if flash[:success] %>
+  <div class="flash-success">
+    <%= flash[:success] %>
+  </div>
+<% end %>
+
 <h3>
   Post #1
 <%=@post.author.name%>
