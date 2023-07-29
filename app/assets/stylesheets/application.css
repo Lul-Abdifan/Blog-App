@@ -70,7 +70,8 @@ li {
 }
 
 .pagination,
-.all_post_btn, .new-post {
+.all_post_btn,
+.new-post {
   /* Set the background color */
   display: block;
   color: rgb(29, 27, 27); /* Set the text color */
@@ -85,23 +86,22 @@ li {
 }
 
 /* Add hover effect */
- .all_post_btn:hover {
+.all_post_btn:hover {
   background-color: #3e8e76;
 }
 
-.new-post-header{
-
- margin:30px auto;
+.new-post-header {
+  margin: 30px auto;
 }
+
 /* Style for the form container */
-.new-post{
+.new-post {
   max-width: 400px;
   margin: 150px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
   background-color: #f9f9f9;
-  border:solid 5px #ff8800
 }
 
 form label {
@@ -109,7 +109,6 @@ form label {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 
 form input[type="text"],
 form textarea {
@@ -134,12 +133,12 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #0056b3;
 }
-.filling-coomment-like{
+
+.filling-coomment-like {
   display: flex;
-  
   justify-content: center;
   align-items: center;
-  margin-left:250px;
+  margin-left: 250px;
   margin-top: 20px;
 }
 

@@ -18,17 +18,14 @@ class PostsController < ApplicationController
 
     if @post.save
       flash[:success] = 'New post successfully added!'
-      redirect_to user_post_path(current_user,@post)
+      redirect_to user_post_path(current_user, @post)
     else
       render :new
-      flash[:notice] = 'Fill again'  
+      flash[:notice] = 'Fill again'
     end
   end
 
   def post_params
-    params.require(:post).permit(:title,:text)
+    params.require(:post).permit(:title, :text)
   end
-
-
-  end
-
+end
