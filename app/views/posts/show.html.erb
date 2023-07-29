@@ -15,7 +15,13 @@
 <span class="like-span">Likes: <%=@post.likes_counter%></span>
 </article>
 
+
 <%=@post.text%>
+</div>
+<div class="filling-coomment-like">
+<a href="/users/<%= params[:user_id] %>/posts/<%=params[:id]%>/comments/new" class="button-link">Comment Here</a>
+
+<a href=""  class="button-link">Like Here</a>
 </div>
 <div class="each-post-comments">
 <%@post.comments.each do |comment|%> 
