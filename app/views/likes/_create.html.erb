@@ -1,0 +1,9 @@
+<%= form_with model: @like,url: user_post_likes_url(params[:user_id],params[:id])  do |form| %>
+ 
+  <%= form.submit "Like" %>
+<% end %>
+
+
+
+
+

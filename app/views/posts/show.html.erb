@@ -21,7 +21,7 @@
 <div class="filling-coomment-like">
 <a href="/users/<%= params[:user_id] %>/posts/<%=params[:id]%>/comments/new" class="button-link">Comment Here</a>
 
-<a href=""  class="button-link">Like Here</a>
+<%= render 'likes/create' %>
 </div>
 <div class="each-post-comments">
 <%@post.comments.each do |comment|%> 
