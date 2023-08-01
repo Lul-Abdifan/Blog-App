@@ -95,16 +95,15 @@ li {
 }
 
 /* Style for the form container */
-.new-post {
+.new-post { 
   max-width: 400px;
   margin: 150px auto;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f9;
-}
-
-form label {
+  background-color: #f9f9f9;}
+  
+form label { 
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
