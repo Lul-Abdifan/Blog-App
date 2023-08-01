@@ -4,6 +4,8 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+gem 'rails-controller-testing'
+gem 'rspec'
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
