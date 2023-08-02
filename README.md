@@ -147,6 +147,11 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/AbdiBekele68808)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
 
+👤 **Alfie Yang**
+
+- GitHub: [@anbehindY](https://github.com/anbehindY)
+- Twitter: [@yanminthwin](https://twitter.com/yanminthwin)
+- LinkedIn: [@Alfie Yang](https://www.linkedin.com/in/yan-min-thwin)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
