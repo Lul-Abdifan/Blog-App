@@ -97,7 +97,7 @@ li {
 /* Style for the form container */
 .new-post {
   max-width: 400px;
-  margin: 150px auto;
+  margin: 100px auto;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -163,4 +163,25 @@ form input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.error-list{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding-bottom: 30px;
+
+
+}
+.backened-error
+{
+  margin:0px;
+  border:0px;
+  width:400px;
+  font-size:20px;
+}
+.form-validation-message{
+margin-top: 30px;
+margin-left: 45%;
+ 
+
 }
