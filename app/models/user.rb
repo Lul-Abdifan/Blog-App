@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :likes, foreign_key: :author_id
   before_save :downcase_role
 
-  validates :name,:role, presence: true
+  validates :name, :role, presence: true
   validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   def recent_posts
