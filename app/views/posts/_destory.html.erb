@@ -1,0 +1,5 @@
+<%= form_with model: @post,url: user_post_path(@post),method: :delete do |form| %>
+  <% if can?(:destroy, @post) %>
+    <%= form.submit "Delete" %>
+  <%end%>
+<%end%>
