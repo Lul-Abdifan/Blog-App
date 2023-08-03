@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
 
     if @comment.save
       flash[:success] = 'New comment successfully added!'
-     redirect_to user_post_path(params[:user_id], params[:post_id])
+      redirect_to user_post_path(params[:user_id], params[:post_id])
     else
       render :new
       flash[:notice] = 'Fill again'
