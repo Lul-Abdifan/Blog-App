@@ -159,6 +159,7 @@ form input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+
 .login-page {
   display: flex;
   flex-direction: column;
@@ -181,5 +182,5 @@ form input[type="submit"]:hover {
 
 .form-validation-message {
   margin-top: 30px;
-  margin-left: 45%;
-}
+
+
