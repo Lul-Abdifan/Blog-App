@@ -1,15 +1,164 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.each-post,
+ul,
+.each-post-comments {
+  list-style: none;
+  padding: 0;
+  margin: 0 300px;
+}
+
+.custom-span {
+  color: black;
+  text-decoration: none;
+}
+
+.post-link {
+  color: black;
+  text-decoration: none;
+}
+
+.each-post,
+.each-post-comments {
+  margin-top: 30px;
+  padding-left: 20px;
+  border: 3px solid #252323;
+}
+
+.each-post-comments h6 {
+  padding: 0;
+}
+
+span {
+  position: relative;
+  left: 60%;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.each-post span {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.bio,
+h1.user-name,
+li {
+  display: grid;
+  padding-left: 20px;
+  margin-top: 30px;
+  border: 3px solid #252323;
+  font-size: 30px;
+}
+
+.bio,
+.user-name {
+  margin: 30px 300px;
+  font-size: 15px;
+}
+
+.comment-likes {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.posts_counter {
+  padding: 10px 0;
+}
+
+.comment-list {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.pagination,
+.all_post_btn,
+.new-post {
+  /* Set the background color */
+  display: block;
+  color: rgb(29, 27, 27); /* Set the text color */
+  margin: 30px 43%;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: solid 4px black;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+/* Add hover effect */
+.all_post_btn:hover {
+  background-color: #3e8e76;
+}
+
+.new-post-header {
+  margin: 30px auto;
+}
+
+/* Style for the form container */
+.new-post {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allows vertical resizing of text areas */
+}
+
+/* Style for the form submit button */
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.filling-coomment-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+.specified-profile {
+  margin-left: 45%;
+}

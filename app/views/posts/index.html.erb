@@ -1,1 +1,37 @@
-<h1>All posts for individual author are here </h1>
+<div>
+
+<h1 class="user-name">          
+  
+       <% if @user.photo? %>
+      <%= image_tag @user.photo %>
+    <% else %>
+      <%= image_tag 'https://randomuser.me/api/portraits/med/men/75.jpg' %>
+    <% end %>
+     <%=@user.name%>
+    <span class="posts_counter">Number of Posts: <%=@user.posts_counter%></span></h1>
+<ul>
+    <%@user.posts.each_with_index do |post,index| %>
+     <li><h4><%= post.title %> </h4>
+
+    <%= link_to post.text, "/users/#{post.author_id}/posts/#{post.id}", class: "post-link" %>
+  
+<div class="comment-likes">
+<span>Comments: <%=post.comments_counter%></span>
+<span class="like-span">Likes: <%=post.likes_counter%></span>
+</div>
+</li>
+  <% if post.comments.any? %>
+  <li>
+   <% post.five_recent_comments.each do |comment| %>
+      <p class="comment-list"><%=comment.author.name%>: <%= comment.text %></p>
+  <% end %>
+  
+  </li>
+   
+ 
+  <% end %>
+<% end %>
+<ul>
+<a href="" class="pagination">Pagination</a>
+
+</div>
