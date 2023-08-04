@@ -14,17 +14,15 @@ RSpec.describe 'Integration Testing', type: :system do
       Like.create!(author: @user1, post: @post1)
       visit user_posts_path(@user1)
     end
-  
+
     it 'User Profile Picture' do
       expect(page).to have_css("img[src='#{@user1.photo}']")
     end
-
 
     it "user's username" do
       expect(page).to have_content(@user1.name)
     end
 
-   
     it 'number of posts' do
       expect(page).to have_content(@user1.posts_counter)
     end
