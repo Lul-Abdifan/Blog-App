@@ -11,7 +11,7 @@
     <span class="posts_counter">Number of Posts: <%=@user.posts_counter%></span></h1>
 <ul>
     <%@user.posts.each_with_index do |post,index| %>
-     <li><h4>Post #<%=index + 1%> </h4>
+     <li><h4><%= post.title %> </h4>
 
     <%= link_to post.text, "/users/#{post.author_id}/posts/#{post.id}", class: "post-link" %>
   
