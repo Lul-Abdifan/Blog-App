@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Integration Testin', type: :system do
-    describe "Users index page" do
+    describe "Posts Index page" do
 
    before(:each) do
 
