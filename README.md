@@ -22,7 +22,7 @@
 
 # 📖 Blog App <a name="about-project"></a>
 
-**Blogify** is a user-friendly blog app that allows seamless creation, management, and publishing of blogs. It offers features like article writing and editing, post categorization, comments, and customizable themes.
+**Blogify** A user-friendly blog app that allows seamless creation, management, and publishing of blogs. It offers features like article writing and editing, post categorization, comments, and customizable themes.
 
 
 
